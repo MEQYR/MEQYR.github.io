@@ -1,0 +1,92 @@
+{% extends 'main/base.html' %}
+
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="container px-4 py-5" id="hanging-icons">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="2em" height="2em"><use xlink:href="#toggles2">
+            <symbol id="toggles2" viewBox="0 0 16 16">
+              <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z"></path>
+              <path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z"></path>
+              <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
+            </symbol>
+          </use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2">Индивидуальный подход</h3>
+          <p>Мы тщательно изучаем потребности каждого клиента и разрабатываем индивидуальные решения, которые соответствуют его бизнес-целям и ожиданиям.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="2em" height="2em"><use xlink:href="#cpu-fill">
+            <symbol id="cpu-fill" viewBox="0 0 16 16">
+              <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"></path>
+              <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z"></path>
+            </symbol>
+          </use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2">Комплексные IT-решения</h3>
+          <p>Мы предлагаем полный спектр IT-услуг, от разработки веб-приложений до мобильных приложений и консультаций. Мы можем воплотить все ваши IT-идеи в одном месте.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="2em" height="2em"><use xlink:href="#tools">
+              <symbol id="tools" viewBox="0 0 16 16">
+                <path d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"></path>
+              </symbol>
+          </use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2">Качество и надежность</h3>
+          <p>Мы гарантируем высокое качество наших продуктов и услуг, а также стабильную и надежную работу наших IT-систем.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+          <div class="col-md-7 order-md-2 h-100 p-5 pb-3">
+            <h2 class="featurette-heading fw-normal lh-1">Современное оборудование и инфраструктура.</h2>
+            <p class="lead">Офис компании Тыжпрограммист находится в центре города Кодовск, на улице Программистов, дом 123. Офис расположен в современном здании с хорошо развитой инфраструктурой и удобным доступом. Офис компании имеет современный и стильный дизайн, сочетающий функциональность и комфорт. Внутреннее пространство офиса организовано с учетом потребностей сотрудников, обеспечивая комфортные условия работы и творческую атмосферу. Офис компании Тыжпрограммист оснащен современным оборудованием и инфраструктурой, включая высокоскоростной интернет, современные компьютеры, сервера и другое необходимое оборудование для разработки программного обеспечения и оказания IT-услуг. Офис также предоставляет комфортные условия для отдыха и работы сотрудников, включая зоны отдыха, кухню с оборудованием для приготовления пищи и обеденными зонами, а также современные санитарные помещения.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-4" src="https://officesnapshots.com/wp-content/uploads/2023/01/mediabrands-offices-warsaw-500x500-compact.jpg">
+          </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+          <div class="col-md-7 h-100 p-5 pb-3 ">
+            <h2 class="featurette-heading fw-normal lh-1">Продукты и услуги.</h2>
+            <p class="lead">    Разработка веб-приложений: Мы создаем современные и функциональные веб-приложения, которые соответствуют вашим бизнес-потребностям. Мы работаем с различными технологиями, такими как HTML, CSS, JavaScript, PHP, Python и другими.
+    Мобильные приложения: Мы разрабатываем интуитивно понятные и удобные мобильные приложения для iOS и Android, которые помогают вам достичь вашей целевой аудитории и реализовать вашу бизнес-стратегию.
+    Консалтинг и техническая поддержка: Мы предоставляем консультационные услуги в области IT-технологий, а также техническую поддержку для наших клиентов, чтобы обеспечить стабильную и бесперебойную работу их IT-систем.</p>
+          </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-4" src="https://images.wallpapersden.com/image/download/programming-coding-language_bGhpbm6UmZqaraWkpJRqZWWtamVl.jpg" width="500" height="500">
+            </div>
+        </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+          <div class="col-md-7 order-md-2 h-100 p-5 pb-3">
+            <h2 class="featurette-heading fw-normal lh-1">Команда "Тыжпрограммист".</h2>
+            <p class="lead">Команда Тыжпрограммист состоит из высококвалифицированных и творческих профессионалов, обладающих опытом работы в различных областях IT-индустрии. Мы гордимся нашими специалистами, которые всегда готовы воплощать новые идеи в жизнь и решать сложные технические задачи. Наша команда внимательно слушает потребности клиентов и работает в тесном сотрудничестве с ними, чтобы достичь лучших результатов.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-4" src="https://d34u8crftukxnk.cloudfront.net/slackpress/prod/sites/6/M2A2H%402x.jpg?d=500x500&amp;f=inside" width="500" height="500">
+          </div>
+    </div>
+    <hr class="featurette-divider">
+
+        </div>
+{% endblock %}
